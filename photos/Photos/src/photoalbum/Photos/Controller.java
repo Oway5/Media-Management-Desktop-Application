@@ -1,4 +1,4 @@
-package Photos;
+package photoalbum.Photos;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -44,7 +44,10 @@ public class Controller {
         
     }
     public void enterButton(ActionEvent e){
-        System.out.println("lmao");
         
+    }
+    public void lol(){
+        System.out.println("lmao");
+
     }
 }

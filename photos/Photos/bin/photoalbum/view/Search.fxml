@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:contoller = "controllers.SearchContoller">
+   <children>
+      <Label layoutX="181.0" layoutY="8.0" text="search + album name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="optionalInput2" layoutX="14.0" layoutY="172.0" />
+      <TextField fx:id="mandatoryInput2" layoutX="191.0" layoutY="172.0" />
+      <TextField fx:id="optionalInput1" layoutX="14.0" layoutY="136.0" />
+      <TextField fx:id="mandatoryInput2" layoutX="191.0" layoutY="136.0" />
+      <TextField fx:id="endDateInput" layoutX="483.0" layoutY="359.0" prefHeight="24.0" prefWidth="59.0" text="date2" />
+      <TextField fx:id="beginningDateInput" layoutX="400.0" layoutY="359.0" prefHeight="24.0" prefWidth="59.0" text="date1" />
+      <Label layoutX="423.0" layoutY="339.0" text="search by date" />
+      <ListView  fx:id="searchResults" layoutX="372.0" layoutY="38.0" prefHeight="292.0" prefWidth="200.0" />
+      <Label layoutX="139.0" layoutY="58.0" text="search by tags" />
+      <Label layoutX="57.0" layoutY="104.0" text="optional tags" />
+      <Label layoutX="224.0" layoutY="104.0" text="mandatory tags" />
+      <Button fx:id="makeAlbum" layoutX="23.0" layoutY="286.0" mnemonicParsing="false" text="create album with results" />
+      <TextField fx:id="albumNameInput" layoutX="235.0" layoutY="286.0" prefHeight="24.0" prefWidth="121.0" text="album name" />
+      <Button fx:id="logout" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" text="logout" />
+   </children>
+</AnchorPane>

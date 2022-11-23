@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:contoller = "controllers.AdminController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="Welcome Admin">
          <font>
@@ -21,8 +21,8 @@
          </font>
       </Label>
       <ButtonBar layoutX="157.0" layoutY="128.0" prefHeight="40.0" prefWidth="108.0" />
-      <Button fx:id="adduser" layoutX="26.0" layoutY="168.0" mnemonicParsing="false" text="Add User" />
-      <Button fx:id="deleteuser" layoutX="137.0" layoutY="168.0" mnemonicParsing="false" text="Delete User" />
-      <Button fx:id="LogOffButton" layoutX="269.0" layoutY="20.0" mnemonicParsing="false" text="Log Off" />
+      <Button fx:id="adduser" layoutX="26.0" layoutY="168.0" mnemonicParsing="false" text="Add User" onAction="#addUser"/>
+      <Button fx:id="deleteuser" layoutX="137.0" layoutY="168.0" mnemonicParsing="false" text="Delete User" onAction="#deleteUser"/>
+      <Button fx:id="LogOffButton" layoutX="269.0" layoutY="20.0" mnemonicParsing="false" text="Log Off" onAction="#logout"/>
    </children>
 </AnchorPane>
