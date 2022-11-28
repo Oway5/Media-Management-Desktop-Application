@@ -1,4 +1,4 @@
-package photoalbum.controllers;
+package photoalbum.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

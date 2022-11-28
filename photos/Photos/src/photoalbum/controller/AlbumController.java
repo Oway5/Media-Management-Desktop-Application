@@ -1,4 +1,4 @@
-package photoalbum.controllers;
+package photoalbum.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,7 +24,7 @@ public class AlbumController{
     @FXML Button addPhoto, removePhoto, addCaption, addTag, deleteTag, copy_paste, movePhoto, nextPhoto, previousPhoto, logout, changeCaption, search;
 
     public void addPhoto(ActionEvent e){
-
+        
     }
 
     public void removePhoto(ActionEvent e){
