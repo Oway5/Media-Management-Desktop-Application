@@ -12,26 +12,20 @@
     ADD SEARCH BUTTON
  -->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photoalbum.controller.NonAdminController">
    <children>
-      <Button fx:id="createAlbum" layoutX="552.0" layoutY="144.0" mnemonicParsing="false" onAction="#createAlbum" text="Create ALbum" />
-      <Button fx:id="deleteAlbum" layoutX="552.0" layoutY="106.0" mnemonicParsing="false" onAction="#deleteAlbum" text="Delete Album" />
-      <Button fx:id="renameAlbum" layoutX="546.0" layoutY="72.0" mnemonicParsing="false" onAction="#renameAlbum" text="Rename Album" />
-      <Button fx:id="openAlbum" layoutX="556.0" layoutY="34.0" mnemonicParsing="false" onAction="#openAlbum" text="Open album" />
-      <Button fx:id="logout" layoutX="577.0" layoutY="340.0" mnemonicParsing="false" onAction="#logout" text="logout" />
-      <Button fx:id="search" layoutX="574.0" layoutY="270.0" mnemonicParsing="false" text="search" />
-      <Button fx:id="back" layoutX="583.0" layoutY="307.0" mnemonicParsing="false" text="back" />
-      <TextField fx:id="EnteredAlbumName" alignment="CENTER" layoutX="553.0" layoutY="193.0" opacity="0.69" prefHeight="24.0" prefWidth="111.0" text="Enter Album Name">
+      <Button fx:id="createAlbum" layoutX="545.0" layoutY="185.0" mnemonicParsing="false" onAction="#createAlbum" text="Create Album" />
+      <Button fx:id="deleteAlbum" layoutX="546.0" layoutY="148.0" mnemonicParsing="false" onAction="#deleteAlbum" text="Delete Album" />
+      <Button fx:id="renameAlbum" layoutX="540.0" layoutY="114.0" mnemonicParsing="false" onAction="#renameAlbum" text="Rename Album" />
+      <Button fx:id="openAlbum" layoutX="550.0" layoutY="76.0" mnemonicParsing="false" onAction="#openAlbum" text="Open album" />
+      <Button fx:id="logout" layoutX="593.0" layoutY="322.0" mnemonicParsing="false" onAction="#logOut" text="Logout" />
+      <Button fx:id="search" layoutX="568.0" layoutY="219.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <TextField fx:id="EnteredAlbumName" alignment="CENTER" layoutX="537.0" layoutY="26.0" opacity="0.69" prefHeight="24.0" prefWidth="111.0" text="Enter Album Name">
          <font>
             <Font size="10.0" />
          </font></TextField>
-      <ListView fx:id="albumsList" layoutX="23.0" layoutY="38.0" prefHeight="315.0" prefWidth="139.0" />
-      <ListView fx:id="photonums" layoutX="220.0" layoutY="38.0" prefHeight="315.0" prefWidth="49.0" />
-      <ListView fx:id="date2list" layoutX="442.0" layoutY="38.0" prefHeight="315.0" prefWidth="76.0" />
-      <ListView fx:id="date1list" layoutX="319.0" layoutY="38.0" prefHeight="315.0" prefWidth="84.0" />
-      <Label layoutX="47.0" layoutY="18.0" prefHeight="16.0" prefWidth="91.0" text="Album Name" />
-      <Label layoutX="220.0" layoutY="18.0" prefHeight="16.0" prefWidth="49.0" text="#photo" />
-      <Label layoutX="319.0" layoutY="18.0" text="Earliest Date" />
-      <Label layoutX="442.0" layoutY="18.0" text="Latest Date" />
+      <ListView fx:id="albumsList" layoutX="23.0" layoutY="48.0" prefHeight="272.0" prefWidth="498.0" />
+      <Label layoutX="95.0" layoutY="326.0" prefHeight="16.0" prefWidth="333.0" text="Album Name - #Photo - Earliest Date - Latest Date" />
+      <Label fx:id="usertitle" layoutX="170.0" layoutY="18.0" prefHeight="16.0" prefWidth="184.0" text="User's Albums" />
    </children>
 </AnchorPane>

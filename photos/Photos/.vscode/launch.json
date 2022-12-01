@@ -6,10 +6,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Photos",
+            "request": "launch",
+            "mainClass": "photoalbum.Photos.Photos",
+            "projectName": "Photos_9438c5fc"
+        },
+        {
+            "type": "java",
             "name": "Launch App",
             "request": "launch",
-            "mainClass": "Photos.Main",
-            "vmArgs": "--module-path /home/oways/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "photoalbum.Photos.Photos",
+            "vmArgs": "--module-path /home/oways/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

@@ -1,3 +1,9 @@
+/** 
+ * 
+ * @author Harshith Samayamantula (hs1018)
+ * @author Oways Jaffer (omj9)
+ * 
+ */
 package photoalbum.controller;
 
 import javafx.event.ActionEvent;
@@ -22,9 +28,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.util.Optional;
+/**
+ * Interface that helps the user to logout
+ */
+public interface LogoutController {
 
-public class LogoutController {
-    void logMeOut(ActionEvent e) throws IOException {
+	/**
+	 * Logs user out, returning them to the login page
+	 * @param e ActionEvent provided by fxml
+     * @throws IOException
+	 */
+    default void logMeOut(ActionEvent e) throws IOException {
 		Alert alert = new Alert(AlertType.CONFIRMATION);
 		alert.setTitle("Confirm Logout");
 		alert.setHeaderText(null);
@@ -32,8 +46,13 @@ public class LogoutController {
 
 		Optional<ButtonType> confirm = alert.showAndWait();
         if (confirm.get() == ButtonType.OK) { 
-			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/Login.fxml"));
-			Parent newScene = (Parent) fxmlLoader.load();
+			FXMLLoader logoutLoader = new FXMLLoader();
+			logoutLoader.setLocation(getClass().getResource("/photoalbum/view/Login.fxml"));
+
+			// FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/photoalbum/view/Login.fxml"));
+			// Parent newScene = (Parent) fxmlLoader.load();
+			Parent newScene = (Parent) logoutLoader.load();
+
 			Scene adminScene = new Scene(newScene);
 			Stage appStage = (Stage) ((Node) e.getSource()).getScene().getWindow();
 			appStage.setScene(adminScene);
